@@ -8,4 +8,5 @@ def key_for_min_value(hash)
     else
       nil
     end
+  end
 end
