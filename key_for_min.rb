@@ -6,9 +6,10 @@ def key_for_min_value(hash)
   min_key = nil
   min_value = 0
   
-  hash.collect do |key, value| 
-    if value < min_value key = min_key
-      return min_key
+  	hash.collect do |key, value| 
+    	if min_value > value 
+            min_key = key
+     	 return min_key
     end
   end
 end
