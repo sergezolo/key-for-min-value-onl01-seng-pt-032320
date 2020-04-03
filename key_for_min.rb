@@ -9,9 +9,8 @@ def key_for_min_value(hash)
   	hash.each do |key, value| 
     	if min_value >= value 
             min_key = key
-      end
       
-      return min_key  
+      end
     end
-  
+  return min_key  
 end
