@@ -6,7 +6,7 @@ def key_for_min_value(hash)
   min_key = nil
   min_value = 0
   
-  hash.each do |key, value|
+  hash.collect do |key, value| 
     if value < min_value key = min_key
       return min_key
     end
